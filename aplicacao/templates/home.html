@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html> 
+	<head> 
+		<title> Fraud Detection </title>
+		<meta charset="utf-8">
+
+        <link rel="icon" href="{{ url_for('static', filename='css/report_9084164.ico') }}" type="image/x-icon" >
+        <link rel="shortcut icon" href="{{ url_for('static', filename='css/report_9084164.ico') }}" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+	</head>
+
+    <body>
+        <div class="title-box">
+            <h1 id="title">Seja bem vindo ao sistema de detecção de fraude bancária</h1>
+        </div>
+
+        <div class="form-box">
+            <form>
+                <span>
+                <input class="form__input" type="number" minlength="1" maxlength="20" name="step" placeholder="Segundos para a conclusão da transação" required>
+                    <label for="step" class="form__label"> Segundos para a conclusão da transação </label>
+                </span>
+                <span>
+                <input class="form__input" type="number" minlength="1" maxlength="20" name="amount" placeholder="Valor da transação" required>
+                    <label for="amount" class="form__label"> Valor da Transação</label>
+                </span>
+                <span>
+                <input class="form__input" type="number" name="oldbalanceOrg" placeholder="Saldo do Remetende" required>
+                    <label for="oldbalanceOrg" class="form__label">Saldo do Remetente</label>
+                </span>
+                <span>
+                <input class="form__input" type="number"  min="1"name="newbalanceOrg" placeholder="Novo Saldo do Remetente" required>
+                    <label for="newbalanceOrig" class="form__label">Novo Saldo do Remetente</label>
+                </span>
+                <span>
+                <input class="form__input" type="number"  min="1" name="oldbalanceDest" placeholder="Saldo do Destinatário" required>
+                    <label for="oldbalanceDest" class="form__label">Saldo do Destinatário</label>
+                </span>
+                <span>
+                <input class="form__input" type="number" minlength="1" maxlength="20" name="newbalanceDest" placeholder="Novo Saldo do Destinatário" required>
+                    <label for="newbalanceDest" class="form__label">Novo Saldo do Destinatário</label>
+                </span>
+                <span>
+                <select  class="form__input" name="type" placeholder="Tipo de transação">
+                    <option value="" disabled selected hidden>Tipo de Transação</option>
+                    <option value="cash_out">Cash-Out</option>
+                    <option value="cash_in">Cash-In</option>
+                    <option value="transfer">Transferência</option>
+                    <option value="debit">Débito</option>
+                    <option value="payment">Pagamento</option>
+                </select>
+                <label for="type" class="form__label">Tipo de Transação</label>
+                </span>
+                <span>
+                <button type="button"  class="test-button" onclick="testTransaction()"></button>
+                </span>
+                
+            </form>
+
+        </div>
+        <div class="list-box">
+            <table id="transactions-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Segundos para a Conclusão da Transação</th>
+                    <th>Valor da Transação</th>
+                    <th>Saldo do Remetente</th>
+                    <th>Novo Saldo do Remetente</th>
+                    <th>Saldo do Destinatário</th>
+                    <th>Novo Saldo do Destinatário</th>
+                    <th>Tipo de Transação</th>
+                    <th>Verificação de Fraude</th>
+                </tr>
+            </table>
+
+        </div>
+    </body>

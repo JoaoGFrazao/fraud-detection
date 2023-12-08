@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "ShareTech-Regular";
+    src: url("ShareTech-Regular.ttf");
+}
+
+body {
+    background-image: url('rm373batch4-12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title-box{
+    background-color: rgba(255,255,255, 0.8);
+    margin: auto;
+    padding: 30px;
+    width: 80vw;
+    height: auto;
+    position: relative;
+    text-align: center; 
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form-box{
+    background-color: rgba(255,255,255, 0.8);
+    margin: auto;
+    margin-top: 10vw;
+    padding: 50px;
+    width: 60vw;
+    height: fit-content;
+    position: relative;
+    text-align: center; 
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.list-box{
+  background-color: rgba(255,255,255, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  margin-top: 14vw;
+  padding: 50px;
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  text-align: center;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#title{
+    font-family:"ShareTech-Regular" ;
+    color: darkblue;
+}
+
+.form__label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+  }
+
+  .delete_button {
+    height: 50px;
+    width: 50px;
+    background-image: url('delete_10025869.png');
+    cursor: pointer;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+    margin: 10px;
+  }
+.delete_button:active{
+  background-image: url("delete_10025869-active.png");
+}
+
+
+  .form__input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+      margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+  }
+.test-button{
+  height: 99px;
+  width: 304px;
+  background-image: url('25387-5-submit-button-clipart.png');
+  cursor: pointer;
+  background-size: cover;
+  /* border-radius: 50%; */
+  border: none;
+  margin: 10px;
+}
+.test-button:active{
+background-image: url("25387-5-submit-button-clipart-active.png");
+}
+
+#transactions-table {
+  word-wrap: break-word;
+  width: 90%;
+  text-align: center;
+  padding: 5px;
+}
+
+#transactions-table th {
+  font-family: "ShareTech-Regular";
+  color: black	;
+  font-size: clamp(16px, 1.5vw, 28px);
+  width: calc(90%/9);
+}
+
+#transactions-table tr{
+  font-family: "ShareTech-Regular";
+  color: black;
+  font-size: clamp(12px, 1vw, 24px);
+}
+
+#test-img{
+  width: 300px;
+  height: auto;
+}
+
+span {
+    margin: 50px;
+    border-bottom: 6px black;
+}
+
+
+
+

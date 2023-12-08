@@ -109,8 +109,11 @@ O modelo utilizado foi o de Árvore de Decisão Original por contar a maior acur
 <h3>2. Métricas</h3>
 
 Acurácia: 0.968
+<br>
 Precisão: 0.984
+<br>
 Recall: 0.951
+<br>
 F1: 0.967
 
 

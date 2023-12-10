@@ -17,19 +17,19 @@ pip install virtualenv
 ### 2. Criar um Ambiente Virtual
 
 ```
-virtualenv venv
+python -m venv env
 ```
 
 ### 3. Ativar o Ambiente Virtual (Windows)
 
 ```
-venv\Scripts\activate
+env\Scripts\activate
 ```
 
 ### 3. Ativar o Ambiente Virtual (Linux/macOS)
 
 ```
-source venv/bin/activate
+source env/bin/activate
 ```
 
 ### 4. Instalar as Dependências
@@ -38,7 +38,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+
+
 ### 5. Executar a Aplicação
+
+```
+cd aplicacao
+```
 
 ```
 python app.py

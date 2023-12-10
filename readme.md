@@ -100,6 +100,16 @@ Com essas etapas, você estará pronto para executar a API em um ambiente virtua
 - Respostas:
   - **200 OK:** Transação deletada com sucesso.
 
+
+
+## Documentação
+
+A documentação em swagger está disponível ao acessar:
+
+ ``` http://localhost:5000/apidocs```
+
+
+
 ## Sobre o Modelo
 
 ### 1. Árvore de Decisão
